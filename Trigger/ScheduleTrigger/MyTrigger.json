@@ -24,3 +24,9 @@
         ]
     }
 }
+
+
+# For UTC timezone, the startTime and endTime need to follow format 'yyyy-MM-ddTHH:mm:ssZ', while for other timezones, startTime and endTime follow 'yyyy-MM-ddTHH:mm:ss'.
+
+# Per ISO 8601 standard, the Z suffix to timestamp mark the datetime to UTC timezone, and render timeZone field useless. 
+# While missing Z suffix for UTC time zone will result in an error upon trigger activation.
